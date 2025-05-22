@@ -1,5 +1,6 @@
 import streamlit as st
 
+# Steps data
 steps = [
     {
         "title": "Step 1: Open the GCash App",
@@ -43,13 +44,14 @@ steps = [
     },
 ]
 
+# Display the selected step
 def display_step(step_index):
-    """Display the step title, content, and image"""
     step = steps[step_index]
-    st.header(step['title'])
-    st.write(step['content'])
-    st.image(step['image'], use_column_width=True)
+    st.header(step["title"])
+    st.write(step["content"])
+    st.image(step["image"], use_column_width=True)
 
+# Main app function
 def app():
     st.title("GCash Transaction Tutorial")
 
@@ -71,10 +73,10 @@ def app():
                 st.session_state.current_step += 1
         else:
             if st.button("Finish"):
-                st.session_state.current_step = 0
                 st.success("You have completed the tutorial!")
+                st.session_state.current_step = 0
 
-    st.write(f"Step {st.session_state.current_step + 1} of {len(steps)}")
+    st.markdown(f"**Step {st.session_state.current_step + 1} of {len(steps)}**")
 
 if __name__ == "__main__":
     app()
