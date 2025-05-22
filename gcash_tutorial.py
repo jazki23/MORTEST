@@ -1,6 +1,7 @@
 import streamlit as st
+import os
 
-# Steps data
+# Step data
 steps = [
     {
         "title": "Step 1: Open the GCash App",
@@ -44,28 +45,29 @@ steps = [
     },
 ]
 
-# Display the selected step
-def display_step(step_index):
-    step = steps[step_index]
+def display_step(index):
+    step = steps[index]
     st.header(step["title"])
     st.write(step["content"])
-    st.image(step["image"], use_column_width=True)
+    if os.path.exists(step["image"]):
+        st.image(step["image"], use_column_width=True)
+    else:
+        st.warning(f"Image not found: {step['image']}")
 
-# Main app function
 def app():
     st.title("GCash Transaction Tutorial")
 
-    if 'current_step' not in st.session_state:
+    # Initialize step state
+    if "current_step" not in st.session_state:
         st.session_state.current_step = 0
 
     display_step(st.session_state.current_step)
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([1, 1])
 
     with col1:
-        if st.session_state.current_step > 0:
-            if st.button("Previous"):
-                st.session_state.current_step -= 1
+        if st.button("Previous") and st.session_state.current_step > 0:
+            st.session_state.current_step -= 1
 
     with col2:
         if st.session_state.current_step < len(steps) - 1:
