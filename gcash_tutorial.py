@@ -5,7 +5,7 @@ steps = [
     {
         "title": "Step 1: Open the GCash App",
         "content": "Ensure the GCash app is installed on your smartphone. Log in using your registered mobile number and 4-digit MPIN.",
-        "image": "images/step1.jpg"
+        "image": "images/step1.png"
     },
     {
         "title": "Step 2: Access the 'Send Money' Feature",
