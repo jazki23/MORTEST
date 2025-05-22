@@ -9,39 +9,44 @@ steps = [
         "image": "images/step1.png"
     },
     {
-        "title": "Step 2: Access the 'Send Money' Feature",
-        "content": "On the app’s home screen, tap on the ‘Send’ or ‘Send Money’ button.",
+        "title": "Step 2: Login using your MPIN",
+        "content": "Type the MPIN of your GCash Account.",
         "image": "images/step2.png"
     },
     {
-        "title": "Step 3: Choose Express Send",
-        "content": "GCash offers several options for sending money:\n- **Express Send**\n- **Send via QR**\n- **Send to Bank**",
+        "title": "Step 3: Tap Send Money",
+        "content": "Gcash offers several options but for this tutorial we will choose Send Money",
         "image": "images/step3.png"
     },
     {
-        "title": "Step 4: Enter the Recipient's GCash Mobile Number",
-        "content": "For Express Send: Input the recipient’s GCash mobile number.\nFor Send via QR: Scan a QR code.\nFor Send to Bank: Provide bank details.",
+        "title": "Step 4: Choose Express Send",
+        "content": "For Express Send: Input the recipient’s GCash mobile number.",
         "image": "images/step4.png"
     },
     {
-        "title": "Step 5: Review Transaction Details",
+        "title": "Step 5: Enter the recipients register Gcash number",
         "content": "Verify recipient details, amount, and service fees before confirming.",
         "image": "images/step5.png"
     },
     {
-        "title": "Step 6: Transaction Confirmation",
-        "content": "You will be prompted to enter your 6-digit code to authenticate the transaction.",
+        "title": "Step 6: Confirm the Details",
+        "content": "Double check the Recipients Mobile number and Correct Amount",
         "image": "images/step6.png"
     },
     {
-        "title": "Step 7: Authentication Code",
-        "content": "You'll receive a text message from GCash containing the authentication code.",
+        "title": "Step 7: Tap the Confirmation Button and Send",
+        "content": "Tap the Confirmation button so that you can the Money",
         "image": "images/step7.png"
     },
     {
-        "title": "Step 8: Save/Share the Receipt",
-        "content": "You can screenshot or download the receipt for your records.",
+        "title": "Step 8: Enterthe Authentication Code",
+        "content": "GCASH will send you the Authentication Code via SMS",
         "image": "images/step8.png"
+    },
+    {
+        "title": "Step 9: Download to Save the E-Receipt",
+        "content": "For transparency purposes",
+        "image": "images/step9.png"
     },
 ]
 
